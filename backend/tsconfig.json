@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                                
+    "module": "commonjs",                           
+    "lib": ["ES6"],                                  
+    "removeComments": true,                      
+    "strictPropertyInitialization": false,        
+    "esModuleInterop": true,                        
+    "experimentalDecorators": true,              
+    "emitDecoratorMetadata": true,               
+    "skipLibCheck": true,                          
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./src/@types"]
+  }
+}
