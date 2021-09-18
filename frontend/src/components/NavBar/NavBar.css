@@ -1,0 +1,31 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    padding-right: 15px;
+    padding-left: 50px;
+    border: 1px solid red;
+}
+
+
+.logoContainer {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.links {
+ margin-right: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.links a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #e1e1e1;
+    font-size: 18px;
+}

@@ -5,10 +5,9 @@
     box-sizing: border-box;
 }
 body {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     color: #e1e1e1;
     background-color: #1e1e1e;
-    display: flex;
     font-family: 'Rubik', sans-serif;
 }
