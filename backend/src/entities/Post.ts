@@ -21,7 +21,7 @@ class Post {
     @UpdateDateColumn()
     updated_at: Date
 
-    @Expose({ name: "custom-title"})
+    @Expose({ name: "custom_title"})
     customTitle(): string{
         return `@${this.title}`
     }

@@ -1,13 +1,9 @@
-import Titulo from "components/Titulo";
-import NavBar from "components/NavBar";
-import Article from "components/Article";
+import Routes from "routes";
 
 function App() {
   return (
     <>
-      <NavBar/>
-      <Titulo/>
-      <Article/>
+      <Routes/>
     </>
   );
 }

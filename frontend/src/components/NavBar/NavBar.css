@@ -3,17 +3,19 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    width: 100vw;
+    width: 100%;
     padding-right: 15px;
     padding-left: 50px;
-    border: 1px solid red;
 }
 
-
-.logoContainer {
-    width: 75px;
-    height: 75px;
-    overflow: hidden;
+.logoContainer a{
+    text-decoration: none;
+    color: #e1e1e1;
+    font-size: 15pt;
+}
+.logoContainer span{
+    font-style: italic;
+    color: rgb(31, 218, 87);
 }
 
 .links {
@@ -24,8 +26,15 @@
 }
 
 .links a{
+    padding: 10px;
     margin-left: 30px;
     text-decoration: none;
     color: #e1e1e1;
     font-size: 18px;
+}
+.links a:hover{
+    border: 2px solid rgb(31, 218, 87);
+    border-radius: 5px;
+    color: rgb(31, 218, 87);
+    transition: ease;
 }
