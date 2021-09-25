@@ -6,6 +6,10 @@
     position: relative;
     bottom: 0;
 }
-.footer a {
-    color: rgb(33, 228, 91);;
+.footer a{
+    color: rgb(33, 228, 91);
+}
+.footer p span{
+    font-style: italic;
+    color: rgb(33, 228, 91);
 }

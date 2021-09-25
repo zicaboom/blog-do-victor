@@ -8,7 +8,7 @@ const Sobre = () => {
             <NavBar />
             <Header title="Sobre"/>
             <article className="sobre">
-                <h2>Sobre</h2>
+                <h2>Victor Monteiro de Oliveira</h2>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius itaque inventore dicta quae nam autem iste nemo, vel saepe facilis fugit nesciunt quibusdam sunt minima magnam laboriosam molestiae a?
                     Consectetur reiciendis amet provident, veritatis ratione placeat officiis modi voluptate ea eaque, qui eligendi iure. Libero, eaque minima! Est ex illum quia, doloremque aspernatur pariatur iusto impedit velit aut minus!

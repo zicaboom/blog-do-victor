@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { AiFillLike, AiFillDislike, AiOutlineDislike, AiOutlineLike } from "react-icons/ai"
 import './Posts.css'
 
 type IPost = [{
@@ -7,9 +8,9 @@ type IPost = [{
     title: string,
     content: string,
     custom_title: string,
-    created_at: string,
     updated_at: string
 }]
+
 const Posts = () => {
 
     const [posts, setPosts] = useState<IPost>([{
@@ -17,11 +18,10 @@ const Posts = () => {
         title: "",
         content: "",
         custom_title: "",
-        created_at: "",
         updated_at: ""
     }])
 
-    useEffect(()=>{
+    useEffect(() => {
         axios.get(`http://localhost:4000/posts`)
             .then(response => {
                 setPosts(response.data)
@@ -29,17 +29,26 @@ const Posts = () => {
     }, [])
 
     console.log(posts)
-    return(
+    return (
         <>
-            {posts.map((post)=>{
-                return(
-                    <div key={post.id} className="card">
-                        <div className="identifier">
-                            <h2 className="title">{post.title}</h2>
-                            <p className="custom-title">{post.custom_title}</p>
+            {posts.map((post) => {
+                return (
+                    <div key={post.id} className="postContainer">
+                        <div className="card">
+                            <div className="identifier">
+                                <h2 className="title">{post.title}</h2>
+                                <p className="custom-title">{post.custom_title}</p>
+                                <p className="updated_at">{post.updated_at}</p>
+                            </div>
+
+                            <p className="content">{post.content}</p>
                         </div>
-                        
-                        <p className="content">{post.content}</p>
+                        <div className="buttons">
+                            <AiOutlineLike />
+                            <AiOutlineDislike />
+                            <AiFillDislike />
+                            <AiFillLike />
+                        </div>
                     </div>
                 )
             })}

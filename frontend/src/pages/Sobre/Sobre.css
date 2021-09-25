@@ -1,9 +1,9 @@
 
 .sobre{
+    margin: 50px 2em 0 2em;
     display: block;
     padding: 70px;
     line-height: 2rem;
-    align-self: center;
 }
 .sobre > h2{
     font-size: 40px;
