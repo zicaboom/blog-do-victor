@@ -1,0 +1,12 @@
+
+.sobre{
+    margin: 3em 2em 0 2em;
+    display: block;
+    padding: 70px;
+    line-height: 2rem;
+    font-size: 15pt;
+}
+.sobre > h2{
+    font-size: 30pt;
+    margin-bottom: 50px;
+}

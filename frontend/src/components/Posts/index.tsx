@@ -20,6 +20,7 @@ const Posts = () => {
         custom_title: "",
         updated_at: ""
     }])
+    const [like, setLike] = useState(false)
 
     useEffect(() => {
         axios.get(`http://localhost:4000/posts`)
@@ -43,11 +44,21 @@ const Posts = () => {
 
                             <p className="content">{post.content}</p>
                         </div>
-                        <div className="buttons">
-                            <AiOutlineLike />
-                            <AiOutlineDislike />
-                            <AiFillDislike />
-                            <AiFillLike />
+                        <div className="buttons">   
+                            {/* {like ? ()=> (
+                            <>
+                                <AiFillLike size="30" color="#FF9F04"/>
+                            </>):
+                             <>
+                                <AiOutlineLike size="30" color="#FF9F04"/>
+                            </>}           
+                            {!like ? ()=> (
+                            <>
+                                <AiFillDislike size="30" color="#FF9F04"/>
+                            </>):
+                             <>
+                                <AiOutlineDislike size="30" color="#FF9F04"/>
+                            </>} */}
                         </div>
                     </div>
                 )

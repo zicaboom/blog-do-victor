@@ -15,7 +15,7 @@
 }
 .logoContainer span{
     font-style: italic;
-    color: rgb(31, 218, 87);
+    color: #FF9F04;
 }
 
 .links {
@@ -33,8 +33,8 @@
     font-size: 18px;
 }
 .links a:hover{
-    border: 2px solid rgb(31, 218, 87);
+    border: 2px solid #FF9F04;
     border-radius: 5px;
-    color: rgb(31, 218, 87);
+    color: #FF9F04;
     transition: ease;
 }

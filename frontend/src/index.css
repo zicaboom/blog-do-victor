@@ -10,4 +10,5 @@ body {
     color: #e1e1e1;
     background-color: #1e1e1e;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
